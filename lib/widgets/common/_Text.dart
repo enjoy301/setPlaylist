@@ -6,12 +6,12 @@ class _Text extends StatelessWidget {
   @override
   Widget build(BuildContext buildContext) {
     return Text(
-      content,
+      "wow",
       style: TextStyle(
         fontFamily: 'Cafe24',
         fontSize: 30,
         fontWeight: FontWeight.w800,
       ),
-    ),;
+    );
   }
 }

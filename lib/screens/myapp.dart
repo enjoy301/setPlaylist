@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:idoru/screens/home/home.dart';
 import 'package:idoru/screens/idol_list/idol_list.dart';
-import 'package:idoru/screens/idol_select/idol_select.dart';
 import 'package:idoru/screens/splash/splash.dart';
 
 class MyApp extends StatelessWidget {

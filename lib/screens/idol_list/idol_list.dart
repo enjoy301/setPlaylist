@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:idoru/screens/album_list/album_list.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:idoru/screens/idol_detail/idol_detail.dart';
 import 'package:idoru/screens/idol_select/idol_select.dart';
 
 final List<String> imgList = [
@@ -71,7 +71,7 @@ class _IdolListScreen extends State<IdolListScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const IdolDetailScreen()),
+                                builder: (context) => const AlbumListScreen()),
                           );
                         },
                         onLongPress: () {
@@ -243,6 +243,6 @@ class _IdolListScreen extends State<IdolListScreen> {
   void _onPhoto() async {
     XFile? xfile = await ImagePicker().pickImage(source: ImageSource.gallery);
     File file = File(xfile?.path as String);
-    print("wowowow ${file.path}");
+    debugPrint("wowowow ${file.path}");
   }
 }
