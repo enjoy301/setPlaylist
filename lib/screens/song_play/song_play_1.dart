@@ -17,11 +17,17 @@ class _SongPlayStateScreen extends State<SongPlayScreen> {
     super.initState();
 
     _controller = YoutubePlayerController(
-      initialVideoId: widget.youtubeId,
+      initialVideoId: "ELLCf9W2vAo",
+      flags: const YoutubePlayerFlags(
+        mute: false,
+        autoPlay: true,
+        disableDragSeek: false,
+        loop: false,
+        isLive: false,
+        forceHD: true,
+        enableCaption: false,
+      ),
     );
-    _controller.updateValue(YoutubePlayerValue(
-      playbackQuality: "hd1440",
-    ));
   }
 
   @override
