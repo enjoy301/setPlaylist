@@ -13,19 +13,10 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-
-  flutter_svg: ^1.1.4
-
   youtube_player_flutter: ^8.1.0
-
   carousel_slider: ^4.1.1
-
   image_picker: ^0.8.5+3
-
-  pod_player: ^0.1.0
-
-  youtube_player_iframe: ^3.0.4
-  external_app_launcher: ^3.1.0
+  url_launcher: ^6.1.10
 
 dev_dependencies:
   flutter_test:
@@ -46,3 +37,23 @@ flutter:
           weight: 800
         - asset: assets/fonts/Cafe24/Cafe24SsurroundAir.ttf
           weight: 100
+    - family: Pretendard
+      fonts:
+        - asset: assets/fonts/Pretendard/Pretendard-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Pretendard/Pretendard-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Pretendard/Pretendard-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Pretendard/Pretendard-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Pretendard/Pretendard-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Pretendard/Pretendard-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Pretendard/Pretendard-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Pretendard/Pretendard-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Pretendard/Pretendard-Black.ttf
+          weight: 900

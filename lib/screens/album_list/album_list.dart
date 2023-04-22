@@ -10,9 +10,9 @@ class AlbumListScreen extends StatefulWidget {
 
 class _AlbumListScreen extends State<AlbumListScreen> {
   List<List<dynamic>> albums = [
-    ["After Like", 0xFF7DFB4F, "AfterLIKE.png"],
-    ["LOVE DIVE", 0xFF099DF0, "LOVEDIVE.png"],
-    ["ELEVEN", 0xFFFD4532, "ELEVEN.png"]
+    ["After Like", Color(0xFF7DFB4F), "AfterLIKE.png"],
+    ["LOVE DIVE", Color(0xFF099DF0), "LOVEDIVE.png"],
+    ["ELEVEN", Color(0xFFFD4532), "ELEVEN.png"]
   ];
 
   @override
@@ -25,15 +25,31 @@ class _AlbumListScreen extends State<AlbumListScreen> {
             Row(
               children: [
                 Container(
-                  child: Image.asset(
-                    "assets/images/back_sign.png",
-                    width: 30,
-                    height: 30,
+                  margin: EdgeInsets.only(
+                    top: 30,
+                    right: 15,
+                    bottom: 30,
+                    left: 15,
+                  ),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: Image.asset(
+                      "assets/images/back_sign.png",
+                      width: 30,
+                      height: 30,
+                    ),
                   ),
                 ),
                 Text(
                   "앨범 선택",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 40,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: 'Pretendard',
+                  ),
                 ),
               ],
             ),
@@ -45,28 +61,53 @@ class _AlbumListScreen extends State<AlbumListScreen> {
                 BuildContext context,
                 int index,
               ) {
-                return InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => PlayListScreen(
-                          albumName: albums[index][0],
+                return Container(
+                  margin: EdgeInsets.only(
+                    top: 15,
+                    right: 15,
+                    bottom: 40,
+                    left: 15,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Color.lerp(albums[index][1], Color(0x99000000), 0.5),
+                  ),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PlayListScreen(
+                            albumName: albums[index][0],
+                          ),
                         ),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    color: Color(albums[index][1]),
+                      );
+                    },
                     child: Row(
                       children: [
-                        Image.asset(
-                          "assets/images/${albums[index][2]}",
+                        Container(
+                          margin: EdgeInsets.only(left: 30, right: 20),
+                          child: Image.asset(
+                            "assets/images/${albums[index][2]}",
+                          ),
                         ),
                         Text(
                           albums[index][0],
                           style: TextStyle(
                             color: Colors.white,
+                            fontSize: 22,
+                            fontFamily: 'Pretendard',
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        // Image right end sort
+                        Spacer(),
+                        Container(
+                          margin: EdgeInsets.only(right: 20),
+                          child: Image.asset(
+                            "assets/images/next_sign.png",
+                            width: 50,
+                            height: 50,
                           ),
                         ),
                       ],

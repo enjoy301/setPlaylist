@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/material.dart';
 import 'package:idoru/screens/album_list/album_list.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:idoru/screens/idol_select/idol_select.dart';
+import 'package:image_picker/image_picker.dart';
 
 final List<String> imgList = [
   'assets/images/list_image_1.png',
@@ -42,6 +42,7 @@ class _IdolListScreen extends State<IdolListScreen> {
                       color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
+                      fontFamily: 'Pretendard',
                     ),
                   ),
                   GestureDetector(
