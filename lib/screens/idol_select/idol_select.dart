@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../controllers/MyIdolController.dart';
 
 class IdolSelectScreen extends StatefulWidget {
   const IdolSelectScreen({Key? key}) : super(key: key);
@@ -20,6 +23,8 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(MyIdolController());
+
     return Dialog(
       backgroundColor: Colors.transparent,
       insetPadding: EdgeInsets.all(10),
@@ -137,7 +142,7 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
                             style: TextStyle(
                               fontSize: 13,
                               fontFamily: 'Cafe24',
-                              color: searchList[index]["isSelected"]
+                              color: controller.isMyIdol(index)
                                   ? Color(0xFF72B8AB)
                                   : Colors.white,
                               fontWeight: FontWeight.w800,
@@ -146,10 +151,10 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
                           onTap: () {
                             if (!searchList[index]["isSelected"]) {
                               selectList.add(index);
-                              prefs.setBool("$index", true);
+                              controller.addIdol(index);
                             } else {
                               selectList.remove(index);
-                              prefs.setBool("$index", false);
+                              controller.removeIdol(index);
                             }
                             searchList[index]["isSelected"] =
                                 !searchList[index]["isSelected"];
@@ -167,7 +172,9 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
                   padding: EdgeInsets.only(top: 10),
                   child: OutlinedButton(
                     onPressed: () {
-                      Navigator.pop(context);
+                      controller.carouselController.value.jumpToPage(0);
+                      controller.setCurrentPage(0);
+                      Get.back();
                     },
                     style: OutlinedButton.styleFrom(
                       padding: EdgeInsets.all(20),

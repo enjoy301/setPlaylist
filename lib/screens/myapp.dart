@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:idoru/screens/idol_list/idol_list.dart';
+import 'package:get/get.dart';
 import 'package:idoru/screens/splash/splash.dart';
+
+import 'idol_list/idol_list.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -12,14 +14,14 @@ class MyApp extends StatelessWidget {
       future: Init.instance.initialize(context),
       builder: (context, AsyncSnapshot snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const MaterialApp(
+          return GetMaterialApp(
             debugShowCheckedModeBanner: false,
             home: SplashScreen(),
           ); // 초기 로딩 시 Splash Screen
         }
         // else if (snapshot.hasError) { return MaterialApp(home: ErrorScreen()); }
         else {
-          return MaterialApp(
+          return GetMaterialApp(
             debugShowCheckedModeBanner: false,
             home: snapshot.data,
           );
@@ -31,6 +33,7 @@ class MyApp extends StatelessWidget {
 
 class Init {
   Init._();
+
   static final instance = Init._();
 
   Future<Widget?> initialize(BuildContext context) async {

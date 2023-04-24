@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:idoru/screens/play_list/play_list.dart';
 
 class AlbumListScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _AlbumListScreen extends State<AlbumListScreen> {
                   ),
                   child: InkWell(
                     onTap: () {
-                      Navigator.pop(context);
+                      Get.back();
                     },
                     child: Image.asset(
                       "assets/images/back_sign.png",
@@ -74,14 +75,7 @@ class _AlbumListScreen extends State<AlbumListScreen> {
                   ),
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => PlayListScreen(
-                            albumName: albums[index][0],
-                          ),
-                        ),
-                      );
+                      Get.to(PlayListScreen(albumName: albums[index][0]));
                     },
                     child: Row(
                       children: [
