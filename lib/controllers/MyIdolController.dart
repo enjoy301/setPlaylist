@@ -6,6 +6,14 @@ class MyIdolController extends GetxController {
   var currentPage = 0.obs;
   var carouselController = CarouselController().obs;
 
+  void loadMyIdolList(String csv) {
+    if (csv == "") {
+      myIdolIdList.value = [];
+      return;
+    }
+    myIdolIdList.value = csv.split(',').map((e) => int.parse(e)).toList();
+  }
+
   void addIdol(int id) {
     myIdolIdList.add(id);
   }

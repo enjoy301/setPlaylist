@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:idoru/screens/idol_list/idol_list.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class SplashScreen extends StatelessWidget {
+import '../../controllers/MyIdolController.dart';
+
+class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
+  @override
+  State<SplashScreen> createState() => _SplashScreen();
+}
+
+class _SplashScreen extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,5 +60,27 @@ class SplashScreen extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+
+    _sharedPreferencesInit();
+    _mustWaitTime();
+  }
+
+  _sharedPreferencesInit() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+
+    var controller = Get.put(MyIdolController());
+    controller.loadMyIdolList(prefs.getString("idolList") ?? "");
+  }
+
+  // Warning: 위 로직이 끝나고 3초 뒤인지 확인 필요.
+  _mustWaitTime() async {
+    await Future.delayed(Duration(seconds: 3), () {
+      Get.to(() => IdolListScreen());
+    });
   }
 }

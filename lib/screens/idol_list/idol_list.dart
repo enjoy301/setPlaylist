@@ -251,13 +251,6 @@ class _IdolListScreen extends State<IdolListScreen> {
     );
   }
 
-  @override
-  void initState() {
-    super.initState();
-
-    debugPrint("wow");
-  }
-
   void _onPhoto() async {
     XFile? xfile = await ImagePicker().pickImage(source: ImageSource.gallery);
     File file = File(xfile?.path as String);

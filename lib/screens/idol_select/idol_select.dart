@@ -13,13 +13,12 @@ class IdolSelectScreen extends StatefulWidget {
 
 class _IdolSelectScreen extends State<IdolSelectScreen> {
   late final SharedPreferences prefs;
-  Map<int, dynamic> searchList = {
-    0: {"id": 0, "name": "장원영/아이브", "isSelected": false},
-    1: {"id": 1, "name": "김채원/르세라핌", "isSelected": false},
-    2: {"id": 2, "name": "리즈/아이브", "isSelected": false},
-    3: {"id": 3, "name": "하니/뉴진스", "isSelected": false},
-  };
-  List<int> selectList = [];
+  List<Map<String, dynamic>> idolList = [
+    {"id": 0, "name": "장원영/아이브"},
+    {"id": 1, "name": "김채원/르세라핌"},
+    {"id": 2, "name": "리즈/아이브"},
+    {"id": 3, "name": "하니/뉴진스"},
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -132,37 +131,33 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
                   child: ListView.builder(
                     scrollDirection: Axis.vertical,
                     shrinkWrap: true,
-                    itemCount: searchList.length,
+                    itemCount: idolList.length,
                     itemBuilder: (BuildContext context, int index) {
-                      return Container(
-                        height: 40,
-                        child: ListTile(
-                          title: Text(
-                            searchList[index]["name"],
-                            style: TextStyle(
-                              fontSize: 13,
-                              fontFamily: 'Cafe24',
-                              color: controller.isMyIdol(index)
-                                  ? Color(0xFF72B8AB)
-                                  : Colors.white,
-                              fontWeight: FontWeight.w800,
+                      return Obx(
+                        () => (SizedBox(
+                          height: 40,
+                          child: ListTile(
+                            title: Text(
+                              idolList[index]["name"],
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontFamily: 'Cafe24',
+                                color:
+                                    controller.isMyIdol(idolList[index]["id"])
+                                        ? Color(0xFF72B8AB)
+                                        : Colors.white,
+                                fontWeight: FontWeight.w800,
+                              ),
                             ),
+                            onTap: () {
+                              if (controller.isMyIdol(idolList[index]["id"])) {
+                                controller.removeIdol(index);
+                              } else {
+                                controller.addIdol(index);
+                              }
+                            },
                           ),
-                          onTap: () {
-                            if (!searchList[index]["isSelected"]) {
-                              selectList.add(index);
-                              controller.addIdol(index);
-                            } else {
-                              selectList.remove(index);
-                              controller.removeIdol(index);
-                            }
-                            searchList[index]["isSelected"] =
-                                !searchList[index]["isSelected"];
-                            setState(
-                              () => {},
-                            );
-                          },
-                        ),
+                        )),
                       );
                     },
                   ),
@@ -172,6 +167,8 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
                   padding: EdgeInsets.only(top: 10),
                   child: OutlinedButton(
                     onPressed: () {
+                      prefs.setString(
+                          "idolList", controller.myIdolIdList.join(','));
                       controller.carouselController.value.jumpToPage(0);
                       controller.setCurrentPage(0);
                       Get.back();
@@ -184,18 +181,14 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      backgroundColor: selectList.isEmpty
-                          ? Color(0xFF27282B)
-                          : Color(0xFF72B8AB),
+                      backgroundColor: Color(0xFF72B8AB),
                     ),
                     child: Text(
                       "선택하기",
                       style: TextStyle(
                         fontSize: 15,
                         fontFamily: 'Cafe24',
-                        color: selectList.isEmpty
-                            ? Color(0xFF72B8AB)
-                            : Colors.white,
+                        color: Colors.white,
                         fontWeight: FontWeight.w800,
                       ),
                     ),
@@ -217,11 +210,5 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
 
   _sharedPreferencesInit() async {
     prefs = await SharedPreferences.getInstance();
-    setState(() {
-      searchList[0]["isSelected"] = prefs.getBool("0") ?? false;
-      searchList[1]["isSelected"] = prefs.getBool("1") ?? false;
-      searchList[2]["isSelected"] = prefs.getBool("2") ?? false;
-      searchList[3]["isSelected"] = prefs.getBool("3") ?? false;
-    });
   }
 }
