@@ -60,7 +60,6 @@ class _PlayListScreen extends State<PlayListScreen> {
             Navigator.pop(context);
           },
         ),
-
       ),
       body: SafeArea(
         child: Column(
@@ -75,8 +74,10 @@ class _PlayListScreen extends State<PlayListScreen> {
                 scrollDirection: Axis.horizontal,
                 shrinkWrap: true,
                 itemCount: company.length,
-                itemBuilder: (BuildContext context,
-                    int index,) {
+                itemBuilder: (
+                  BuildContext context,
+                  int index,
+                ) {
                   return InkWell(
                     onTap: () {
                       setState(() {
@@ -125,14 +126,17 @@ class _PlayListScreen extends State<PlayListScreen> {
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
                 itemCount: youtubeId.length,
-                itemBuilder: (BuildContext context,
-                    int index,) {
+                itemBuilder: (
+                  BuildContext context,
+                  int index,
+                ) {
                   return InkWell(
                     onTap: () async {
                       launchUrl(
                         Uri.parse(
                           "https://www.youtube.com/watch?v=${youtubeId[index]}",
                         ),
+                        mode: LaunchMode.externalApplication,
                       );
                     },
                     child: Container(

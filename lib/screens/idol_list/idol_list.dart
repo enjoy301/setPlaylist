@@ -6,11 +6,11 @@ import 'package:idoru/screens/album_list/album_list.dart';
 import 'package:idoru/screens/idol_select/idol_select.dart';
 import 'package:image_picker/image_picker.dart';
 
-final List<String> imgList = [
-  'assets/images/list_image_1.png',
-  'assets/images/list_image_2.png',
-  'assets/images/list_image_1.png',
-  'assets/images/list_image_2.png',
+final List<List<String>> imgList = [
+  ['assets/images/profile/jang1.jpeg', '장원영', '아이브'],
+  ['assets/images/profile/kim1.jpg', '김채원', '르세라핌'],
+  ['assets/images/profile/li1.jpg', '리즈', '아이브'],
+  ['assets/images/profile/ha1.png', '하니', '뉴진스'],
 ];
 
 class IdolListScreen extends StatefulWidget {
@@ -52,6 +52,9 @@ class _IdolListScreen extends State<IdolListScreen> {
                         builder: (BuildContext context) {
                           return IdolSelectScreen();
                         },
+                        barrierDismissible: true,
+                        barrierColor: Colors.black,
+                        barrierLabel: "",
                       );
                     },
                     child: Image.asset(
@@ -151,7 +154,7 @@ class _IdolListScreen extends State<IdolListScreen> {
                             child: Stack(
                               children: <Widget>[
                                 Image.asset(
-                                  item,
+                                  item[0],
                                   fit: BoxFit.cover,
                                   width: 1000.0,
                                   height: 2000.0,
@@ -168,9 +171,9 @@ class _IdolListScreen extends State<IdolListScreen> {
                                     child: Row(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.end,
-                                      children: const [
+                                      children: [
                                         Text(
-                                          '장원영',
+                                          item[1],
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 40.0,
@@ -178,7 +181,7 @@ class _IdolListScreen extends State<IdolListScreen> {
                                           ),
                                         ),
                                         Text(
-                                          '/아이브',
+                                          '/${item[2]}',
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 20.0,

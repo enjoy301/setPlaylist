@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class IdolSelectScreen extends StatefulWidget {
   const IdolSelectScreen({Key? key}) : super(key: key);
@@ -8,57 +9,58 @@ class IdolSelectScreen extends StatefulWidget {
 }
 
 class _IdolSelectScreen extends State<IdolSelectScreen> {
-  List<List<dynamic>> searchList = [
-    ["장원영/아이브", 0],
-    ["조유리", 0],
-    ["김채원/르세라핌", 0]
-  ];
-  List<String> selectList = [];
+  late final SharedPreferences prefs;
+  Map<int, dynamic> searchList = {
+    0: {"id": 0, "name": "장원영/아이브", "isSelected": false},
+    1: {"id": 1, "name": "김채원/르세라핌", "isSelected": false},
+    2: {"id": 2, "name": "리즈/아이브", "isSelected": false},
+    3: {"id": 3, "name": "하니/뉴진스", "isSelected": false},
+  };
+  List<int> selectList = [];
 
   @override
   Widget build(BuildContext context) {
     return Dialog(
       backgroundColor: Colors.transparent,
-      // backgroundColor: Colors.white,
       insetPadding: EdgeInsets.all(10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ListView.builder(
-            scrollDirection: Axis.vertical,
-            shrinkWrap: true,
-            // padding: EdgeInsets.only(right: double.infinity),
-            itemCount: selectList.length,
-            itemBuilder: (BuildContext context, int index) {
-              return Row(
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(left: 15, top: 15),
-                    padding: EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40),
-                      color: Color(0xFF27282B),
-                    ),
-                    child: InkWell(
-                      onTap: () {
-                        debugPrint("wow");
-                      },
-                      child: Text(
-                        selectList[index],
-                        style: TextStyle(
-                          fontFamily: 'Cafe24',
-                          color: Color(0xFF72B8AB),
-                          fontWeight: FontWeight.w800,
-                          fontSize: 13,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              );
-            },
-          ),
+          // ListView.builder(
+          //   scrollDirection: Axis.vertical,
+          //   shrinkWrap: true,
+          //   // padding: EdgeInsets.only(right: double.infinity),
+          //   itemCount: selectList.length,
+          //   itemBuilder: (BuildContext context, int index) {
+          //     return Row(
+          //       children: [
+          //         Container(
+          //           margin: EdgeInsets.only(left: 15, top: 15),
+          //           padding: EdgeInsets.all(20),
+          //           decoration: BoxDecoration(
+          //             borderRadius: BorderRadius.circular(40),
+          //             color: Color(0xFF27282B),
+          //           ),
+          //           child: InkWell(
+          //             onTap: () {
+          //               debugPrint("wow");
+          //             },
+          //             child: Text(
+          //               searchList[selectList[index]]["name"],
+          //               style: TextStyle(
+          //                 fontFamily: 'Cafe24',
+          //                 color: Color(0xFF72B8AB),
+          //                 fontWeight: FontWeight.w800,
+          //                 fontSize: 13,
+          //               ),
+          //             ),
+          //           ),
+          //         ),
+          //       ],
+          //     );
+          //   },
+          // ),
           Container(
             margin: EdgeInsets.all(15),
             padding: EdgeInsets.all(30),
@@ -131,23 +133,26 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
                         height: 40,
                         child: ListTile(
                           title: Text(
-                            searchList[index][0],
+                            searchList[index]["name"],
                             style: TextStyle(
                               fontSize: 13,
                               fontFamily: 'Cafe24',
-                              color: searchList[index][1] == 0
-                                  ? Colors.white
-                                  : Color(0xFF72B8AB),
+                              color: searchList[index]["isSelected"]
+                                  ? Color(0xFF72B8AB)
+                                  : Colors.white,
                               fontWeight: FontWeight.w800,
                             ),
                           ),
                           onTap: () {
-                            if (searchList[index][1] == 0) {
-                              selectList.add(searchList[index][0]);
+                            if (!searchList[index]["isSelected"]) {
+                              selectList.add(index);
+                              prefs.setBool("$index", true);
                             } else {
-                              selectList.remove(searchList[index][0]);
+                              selectList.remove(index);
+                              prefs.setBool("$index", false);
                             }
-                            searchList[index][1] = 1 - searchList[index][1];
+                            searchList[index]["isSelected"] =
+                                !searchList[index]["isSelected"];
                             setState(
                               () => {},
                             );
@@ -200,5 +205,16 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
   @override
   void initState() {
     super.initState();
+    _sharedPreferencesInit();
+  }
+
+  _sharedPreferencesInit() async {
+    prefs = await SharedPreferences.getInstance();
+    setState(() {
+      searchList[0]["isSelected"] = prefs.getBool("0") ?? false;
+      searchList[1]["isSelected"] = prefs.getBool("1") ?? false;
+      searchList[2]["isSelected"] = prefs.getBool("2") ?? false;
+      searchList[3]["isSelected"] = prefs.getBool("3") ?? false;
+    });
   }
 }
