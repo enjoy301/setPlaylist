@@ -4,6 +4,7 @@ import 'package:idoru/screens/idol_list/idol_list.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../controllers/MyIdolController.dart';
+import '../../widgets/common/pretendard_text.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -33,27 +34,16 @@ class _SplashScreen extends State<SplashScreen> {
               ),
               Container(
                 margin: EdgeInsets.only(top: 10, bottom: 10),
-                child: const Text(
+                child: const PText(
                   "셋플",
-                  style: TextStyle(
-                    fontFamily: 'Cafe24',
-                    fontSize: 25,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white,
-                  ),
+                  size: 25,
                 ),
               ),
-              Container(
-                child: const Text(
-                  "내맘대로\n드르륵 탁",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Cafe24',
-                    fontSize: 18,
-                    fontWeight: FontWeight.w100,
-                    color: Colors.white,
-                  ),
-                ),
+              const PText(
+                "내맘대로\n드르륵 탁",
+                align: TextAlign.center,
+                size: 18,
+                weight: FontWeight.w100,
               ),
             ],
           ),

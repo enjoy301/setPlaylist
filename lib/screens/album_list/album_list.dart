@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:idoru/screens/play_list/play_list.dart';
+import 'package:idoru/widgets/album_list/album.dart';
+
+import '../../widgets/common/pretendard_text.dart';
 
 class AlbumListScreen extends StatefulWidget {
   const AlbumListScreen({Key? key}) : super(key: key);
@@ -10,10 +12,14 @@ class AlbumListScreen extends StatefulWidget {
 }
 
 class _AlbumListScreen extends State<AlbumListScreen> {
-  List<List<dynamic>> albums = [
-    ["After Like", Color(0xFF7DFB4F), "AfterLIKE.png"],
-    ["LOVE DIVE", Color(0xFF099DF0), "LOVEDIVE.png"],
-    ["ELEVEN", Color(0xFFFD4532), "ELEVEN.png"]
+  List<Map<String, dynamic>> albums = [
+    {
+      'name': "After Like",
+      'color': Color(0xFF7DFB4F),
+      'image': "AfterLIKE.png"
+    },
+    {'name': "LOVE DIVE", 'color': Color(0xFF099DF0), 'image': "LOVEDIVE.png"},
+    {'name': "ELEVEN", 'color': Color(0xFFFD4532), 'image': "ELEVEN.png"},
   ];
 
   @override
@@ -43,14 +49,10 @@ class _AlbumListScreen extends State<AlbumListScreen> {
                     ),
                   ),
                 ),
-                Text(
+                PText(
                   "앨범 선택",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontWeight: FontWeight.w600,
-                    fontFamily: 'Pretendard',
-                  ),
+                  size: 40,
+                  weight: FontWeight.w600,
                 ),
               ],
             ),
@@ -62,52 +64,7 @@ class _AlbumListScreen extends State<AlbumListScreen> {
                 BuildContext context,
                 int index,
               ) {
-                return Container(
-                  margin: EdgeInsets.only(
-                    top: 15,
-                    right: 15,
-                    bottom: 40,
-                    left: 15,
-                  ),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(5),
-                    color: Color.lerp(albums[index][1], Color(0x99000000), 0.5),
-                  ),
-                  child: InkWell(
-                    onTap: () {
-                      Get.to(PlayListScreen(albumName: albums[index][0]));
-                    },
-                    child: Row(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.only(left: 30, right: 20),
-                          child: Image.asset(
-                            "assets/images/${albums[index][2]}",
-                          ),
-                        ),
-                        Text(
-                          albums[index][0],
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 22,
-                            fontFamily: 'Pretendard',
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                        // Image right end sort
-                        Spacer(),
-                        Container(
-                          margin: EdgeInsets.only(right: 20),
-                          child: Image.asset(
-                            "assets/images/next_sign.png",
-                            width: 50,
-                            height: 50,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                );
+                return AlbumWidget(albumData: albums[index]);
               },
             ),
           ],

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:idoru/widgets/play_list/player_card.dart';
+
+import '../../widgets/common/pretendard_text.dart';
 
 class PlayListScreen extends StatefulWidget {
   final String albumName;
@@ -30,25 +31,13 @@ class _PlayListScreen extends State<PlayListScreen> {
       appBar: AppBar(
         title: Row(
           children: const [
-            Text(
-              "장원영",
-              style: TextStyle(
-                color: Colors.black,
-                fontFamily: "Pretendard",
-                fontWeight: FontWeight.w800,
-                fontSize: 30,
-              ),
-            ),
+            PText("장원영", weight: FontWeight.w800, size: 30),
             Padding(
               padding: EdgeInsets.only(top: 15.0),
-              child: Text(
+              child: PText(
                 "/아이브",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontFamily: "Pretendard",
-                  fontWeight: FontWeight.w800,
-                  fontSize: 14,
-                ),
+                weight: FontWeight.w800,
+                size: 14,
               ),
             ),
           ],
@@ -109,11 +98,10 @@ class _PlayListScreen extends State<PlayListScreen> {
                           bottom: 5,
                         ),
                         child: Center(
-                          child: Text(
+                          child: PText(
                             company[index],
-                            style: selected != index
-                                ? TextStyle(color: Colors.white)
-                                : TextStyle(color: Colors.black),
+                            color:
+                                selected != index ? Colors.white : Colors.black,
                           ),
                         ),
                       ),
@@ -131,54 +119,7 @@ class _PlayListScreen extends State<PlayListScreen> {
                   BuildContext context,
                   int index,
                 ) {
-                  return InkWell(
-                    onTap: () async {
-                      launchUrl(
-                        Uri.parse(
-                          "https://www.youtube.com/watch?v=${youtubeId[index]}",
-                        ),
-                        mode: LaunchMode.externalApplication,
-                      );
-                    },
-                    child: Container(
-                      margin: EdgeInsets.only(
-                        top: 10,
-                        right: 15,
-                        bottom: 10,
-                        left: 15,
-                      ),
-                      decoration: BoxDecoration(
-                        color: Color(0xFF7DFB4F),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.network(
-                            YoutubePlayer.getThumbnail(
-                              quality: ThumbnailQuality.max,
-                              videoId: youtubeId[index],
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                              left: 8.0,
-                              top: 3,
-                              bottom: 3,
-                            ),
-                            child: Text(
-                              "After Like",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 25,
-                                fontWeight: FontWeight.w300,
-                                fontFamily: 'Pretendard',
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  );
+                  return PlayerCardWidget(youtubeId: youtubeId[index]);
                 },
               ),
             ),

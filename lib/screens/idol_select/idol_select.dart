@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../controllers/MyIdolController.dart';
+import '../../widgets/common/pretendard_text.dart';
 
 class IdolSelectScreen extends StatefulWidget {
   const IdolSelectScreen({Key? key}) : super(key: key);
@@ -50,14 +51,10 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
           //             onTap: () {
           //               debugPrint("wow");
           //             },
-          //             child: Text(
+          //             child: PText(
           //               searchList[selectList[index]]["name"],
-          //               style: TextStyle(
-          //                 fontFamily: 'Cafe24',
-          //                 color: Color(0xFF72B8AB),
-          //                 fontWeight: FontWeight.w800,
-          //                 fontSize: 13,
-          //               ),
+          //               color: Color(0xFF72B8AB),
+          //               size: 13,
           //             ),
           //           ),
           //         ),
@@ -78,15 +75,7 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
               children: [
                 Container(
                   margin: EdgeInsets.only(bottom: 15),
-                  child: Text(
-                    "아티스트 검색",
-                    style: TextStyle(
-                      fontFamily: 'Cafe24',
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                      fontSize: 30,
-                    ),
-                  ),
+                  child: PText("아티스트 검색", weight: FontWeight.w800, size: 30),
                 ),
                 TextField(
                   decoration: InputDecoration(
@@ -137,17 +126,12 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
                         () => (SizedBox(
                           height: 40,
                           child: ListTile(
-                            title: Text(
+                            title: PText(
                               idolList[index]["name"],
-                              style: TextStyle(
-                                fontSize: 13,
-                                fontFamily: 'Cafe24',
-                                color:
-                                    controller.isMyIdol(idolList[index]["id"])
-                                        ? Color(0xFF72B8AB)
-                                        : Colors.white,
-                                fontWeight: FontWeight.w800,
-                              ),
+                              size: 13,
+                              color: controller.isMyIdol(idolList[index]["id"])
+                                  ? Color(0xFF72B8AB)
+                                  : Colors.white,
                             ),
                             onTap: () {
                               if (controller.isMyIdol(idolList[index]["id"])) {
@@ -183,15 +167,7 @@ class _IdolSelectScreen extends State<IdolSelectScreen> {
                       ),
                       backgroundColor: Color(0xFF72B8AB),
                     ),
-                    child: Text(
-                      "선택하기",
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: 'Cafe24',
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
+                    child: PText("선택하기", size: 15),
                   ),
                 ),
               ],
