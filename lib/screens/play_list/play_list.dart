@@ -31,13 +31,19 @@ class _PlayListScreen extends State<PlayListScreen> {
       appBar: AppBar(
         title: Row(
           children: const [
-            PText("장원영", weight: FontWeight.w800, size: 30),
+            PText(
+              "장원영",
+              weight: FontWeight.w800,
+              size: 30,
+              color: Colors.black,
+            ),
             Padding(
               padding: EdgeInsets.only(top: 15.0),
               child: PText(
                 "/아이브",
                 weight: FontWeight.w800,
                 size: 14,
+                color: Colors.black,
               ),
             ),
           ],
@@ -68,7 +74,7 @@ class _PlayListScreen extends State<PlayListScreen> {
                   BuildContext context,
                   int index,
                 ) {
-                  return InkWell(
+                  return GestureDetector(
                     onTap: () {
                       setState(() {
                         selected = index;

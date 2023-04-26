@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -38,8 +39,8 @@ class _PlayerCardWidgetState extends State<PlayerCardWidget> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(
-              YoutubePlayer.getThumbnail(
+            CachedNetworkImage(
+              imageUrl: YoutubePlayer.getThumbnail(
                 quality: ThumbnailQuality.max,
                 videoId: widget.youtubeId,
               ),
