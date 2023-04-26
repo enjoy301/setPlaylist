@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../controllers/MyIdolController.dart';
-import '../../widgets/common/pretendard_text.dart';
+import '../../../controllers/MyIdolController.dart';
+import '../../../widgets/pretendard_text.dart';
 
-class IdolSelectScreen extends StatefulWidget {
-  const IdolSelectScreen({Key? key}) : super(key: key);
+class IdolSelectDialog extends StatefulWidget {
+  const IdolSelectDialog({Key? key}) : super(key: key);
 
   @override
-  State<IdolSelectScreen> createState() => _IdolSelectScreen();
+  State<IdolSelectDialog> createState() => _IdolSelectDialog();
 }
 
-class _IdolSelectScreen extends State<IdolSelectScreen> {
+class _IdolSelectDialog extends State<IdolSelectDialog> {
   late final SharedPreferences prefs;
   List<Map<String, dynamic>> idolList = [
     {"id": 0, "name": "장원영/아이브"},

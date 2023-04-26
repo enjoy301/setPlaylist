@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:idoru/screens/idol_list/idol_list.dart';
+import 'package:idoru/views/idol_list/idol_list.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../controllers/MyIdolController.dart';
-import '../../widgets/common/pretendard_text.dart';
+import '../../widgets/pretendard_text.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

@@ -1,9 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:idoru/screens/idol_select/idol_select.dart';
-import 'package:idoru/widgets/common/pretendard_text.dart';
-import 'package:idoru/widgets/idol_list/card.dart';
+import 'package:idoru/views/idol_list/idol_list_widgets/card.dart';
+import 'package:idoru/views/idol_list/idol_list_widgets/idol_select_dialog.dart';
+import 'package:idoru/widgets/pretendard_text.dart';
 
 import '../../controllers/MyIdolController.dart';
 
@@ -33,7 +33,7 @@ class _IdolListScreen extends State<IdolListScreen> {
                   GestureDetector(
                     onTap: () {
                       Get.dialog(
-                        IdolSelectScreen(),
+                        IdolSelectDialog(),
                         barrierColor: Colors.black,
                       );
                     },

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../screens/play_list/play_list.dart';
-import '../common/pretendard_text.dart';
+import '../../../widgets/pretendard_text.dart';
+import '../../play_list/play_list.dart';
 
 class AlbumWidget extends StatefulWidget {
   const AlbumWidget({Key? key, required this.albumData}) : super(key: key);

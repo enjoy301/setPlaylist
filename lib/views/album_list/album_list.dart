@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:idoru/widgets/album_list/album.dart';
+import 'package:idoru/views/album_list/album_list_widgets/album.dart';
 
-import '../../widgets/common/pretendard_text.dart';
+import '../../widgets/pretendard_text.dart';
 
 class AlbumListScreen extends StatefulWidget {
   const AlbumListScreen({Key? key}) : super(key: key);

@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../../controllers/MyIdolController.dart';
-import '../../screens/album_list/album_list.dart';
-import '../common/pretendard_text.dart';
+import '../../../controllers/MyIdolController.dart';
+import '../../../widgets/pretendard_text.dart';
+import '../../album_list/album_list.dart';
 
 class CardWidget extends StatefulWidget {
   const CardWidget({Key? key, required this.id}) : super(key: key);

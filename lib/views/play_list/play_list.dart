@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:idoru/widgets/play_list/player_card.dart';
+import 'package:idoru/views/play_list/play_list_widgets/player_card.dart';
 
-import '../../widgets/common/pretendard_text.dart';
+import '../../widgets/pretendard_text.dart';
 
 class PlayListScreen extends StatefulWidget {
   final String albumName;

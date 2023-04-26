@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-import '../common/pretendard_text.dart';
+import '../../../widgets/pretendard_text.dart';
 
 class PlayerCardWidget extends StatefulWidget {
   const PlayerCardWidget({Key? key, required this.youtubeId}) : super(key: key);
