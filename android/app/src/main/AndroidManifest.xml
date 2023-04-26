@@ -2,7 +2,7 @@
     package="com.atthirty.idoru">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <!--    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />-->
 
     <queries>
         <package android:name="com.atthirty.idoru" />
@@ -14,7 +14,7 @@
     <application
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
-        android:label="idoru">
+        android:label="셋플">
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
