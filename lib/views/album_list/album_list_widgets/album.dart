@@ -18,10 +18,9 @@ class _AlbumWidgetState extends State<AlbumWidget> {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        top: 15,
-        right: 15,
-        bottom: 40,
-        left: 15,
+        top: 35,
+        right: 25,
+        left: 25,
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),

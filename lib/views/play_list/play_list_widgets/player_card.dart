@@ -28,9 +28,8 @@ class _PlayerCardWidgetState extends State<PlayerCardWidget> {
       },
       child: Container(
         margin: EdgeInsets.only(
-          top: 10,
           right: 15,
-          bottom: 10,
+          bottom: 15,
           left: 15,
         ),
         decoration: BoxDecoration(
@@ -48,14 +47,14 @@ class _PlayerCardWidgetState extends State<PlayerCardWidget> {
             Padding(
               padding: const EdgeInsets.only(
                 left: 8.0,
-                top: 3,
-                bottom: 3,
+                top: 7,
+                bottom: 7,
               ),
               child: PText(
-                "After Like",
+                "[페이스캠] IVE WONYOUNG - LOVE DIVE",
                 color: Colors.black,
-                size: 25,
-                weight: FontWeight.w300,
+                size: 18,
+                weight: FontWeight.w400,
               ),
             ),
           ],

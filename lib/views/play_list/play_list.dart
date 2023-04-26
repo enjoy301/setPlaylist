@@ -39,10 +39,12 @@ class _PlayListScreen extends State<PlayListScreen> {
           children: [
             Container(
               margin: EdgeInsets.only(
-                top: 10,
-                bottom: 10,
+                top: 5,
+                right: 15,
+                bottom: 5,
+                left: 15,
               ),
-              height: 60,
+              height: 58,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 shrinkWrap: true,
@@ -65,7 +67,7 @@ class _PlayListScreen extends State<PlayListScreen> {
                         ),
                         color: selected != index
                             ? Colors.transparent
-                            : Colors.white,
+                            : Color(0xFFD9D9D9),
                       ),
                       margin: EdgeInsets.only(
                         top: 10,
@@ -75,16 +77,15 @@ class _PlayListScreen extends State<PlayListScreen> {
                       ),
                       child: Padding(
                         padding: const EdgeInsets.only(
-                          left: 12.0,
-                          right: 12.0,
-                          top: 5,
-                          bottom: 5,
+                          left: 14.0,
+                          right: 14.0,
                         ),
                         child: Center(
                           child: PText(
                             company[index],
                             color:
                                 selected != index ? Colors.white : Colors.black,
+                            weight: FontWeight.w400,
                           ),
                         ),
                       ),
