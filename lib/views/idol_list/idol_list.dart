@@ -29,7 +29,7 @@ class _IdolListScreen extends State<IdolListScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  PText("플레이 리스트", size: 30, weight: FontWeight.bold),
+                  PText("플레이 리스트", size: 35, weight: FontWeight.bold),
                   GestureDetector(
                     onTap: () {
                       Get.dialog(
@@ -39,8 +39,8 @@ class _IdolListScreen extends State<IdolListScreen> {
                     },
                     child: Image.asset(
                       "assets/images/plus_button.png",
-                      width: 40,
-                      height: 40,
+                      width: 45,
+                      height: 45,
                     ),
                   ),
                 ],

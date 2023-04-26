@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:idoru/views/album_list/album_list_widgets/album.dart';
-
-import '../../widgets/pretendard_text.dart';
+import 'package:idoru/widgets/back_appbar.dart';
 
 class AlbumListScreen extends StatefulWidget {
   const AlbumListScreen({Key? key}) : super(key: key);
@@ -25,50 +23,18 @@ class _AlbumListScreen extends State<AlbumListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: BackAppbar("앨범 선택"),
       backgroundColor: Colors.black,
-      body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Container(
-                  margin: EdgeInsets.only(
-                    top: 30,
-                    right: 15,
-                    bottom: 30,
-                    left: 15,
-                  ),
-                  child: InkWell(
-                    onTap: () {
-                      Get.back();
-                    },
-                    child: Image.asset(
-                      "assets/images/back_sign.png",
-                      width: 30,
-                      height: 30,
-                    ),
-                  ),
-                ),
-                PText(
-                  "앨범 선택",
-                  size: 40,
-                  weight: FontWeight.w600,
-                ),
-              ],
-            ),
-            ListView.builder(
-              scrollDirection: Axis.vertical,
-              shrinkWrap: true,
-              itemCount: albums.length,
-              itemBuilder: (
-                BuildContext context,
-                int index,
-              ) {
-                return AlbumWidget(albumData: albums[index]);
-              },
-            ),
-          ],
-        ),
+      body: ListView.builder(
+        scrollDirection: Axis.vertical,
+        shrinkWrap: true,
+        itemCount: albums.length,
+        itemBuilder: (
+          BuildContext context,
+          int index,
+        ) {
+          return AlbumWidget(albumData: albums[index]);
+        },
       ),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:idoru/views/play_list/play_list_widgets/player_card.dart';
+import 'package:idoru/widgets/back_appbar.dart';
 
 import '../../widgets/pretendard_text.dart';
 
@@ -28,34 +28,11 @@ class _PlayListScreen extends State<PlayListScreen> {
   Widget build(context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(
-        title: Row(
-          children: const [
-            PText(
-              "장원영",
-              weight: FontWeight.w800,
-              size: 30,
-              color: Colors.black,
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 15.0),
-              child: PText(
-                "/아이브",
-                weight: FontWeight.w800,
-                size: 14,
-                color: Colors.black,
-              ),
-            ),
-          ],
-        ),
+      appBar: BackAppbar(
+        "장원영",
+        subtitle: "/아이브",
+        textColor: Colors.black,
         backgroundColor: Color(0xFF7DFB4F),
-        elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new, color: Colors.black),
-          onPressed: () {
-            Get.back();
-          },
-        ),
       ),
       body: SafeArea(
         child: Column(
