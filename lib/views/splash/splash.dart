@@ -69,8 +69,7 @@ class _SplashScreen extends State<SplashScreen> {
 
   // Warning: 위 로직이 끝나고 3초 뒤인지 확인 필요.
   _mustWaitTime() async {
-    await Future.delayed(Duration(seconds: 3), () {
-      Get.to(() => IdolListScreen());
-    });
+    await Future.delayed(Duration(seconds: 3));
+    Get.off(() => IdolListScreen());
   }
 }
