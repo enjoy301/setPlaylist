@@ -1,0 +1,239 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.atthirty.idoru"
+4    android:versionCode="2"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <!-- <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" /> -->
+13
+14    <queries>
+14-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:7:5-13:15
+15        <package android:name="com.atthirty.idoru" />
+15-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:8:9-54
+15-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:8:18-51
+16
+17        <intent>
+17-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:9:9-12:18
+18            <action android:name="android.intent.action.VIEW" />
+18-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:10:13-65
+18-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:10:21-62
+19
+20            <data android:scheme="https" />
+20-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:11:13-44
+20-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:11:19-41
+21        </intent>
+22        <intent>
+22-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:18
+23            <action android:name="android.support.customtabs.action.CustomTabsService" />
+23-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-90
+23-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:11:21-87
+24        </intent>
+25    </queries>
+26
+27    <application
+28        android:name="android.app.Application"
+28-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:15:9-42
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.8.0] /Users/kim-eunjong/.gradle/caches/transforms-3/6c8f9cc333087085ca1da745e4f46365/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+30        android:icon="@mipmap/ic_launcher"
+30-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:16:9-43
+31        android:label="셋플" >
+31-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:17:9-27
+32        <activity
+32-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:18:9-42:20
+33            android:name="com.atthirty.idoru.MainActivity"
+33-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:19:13-41
+34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+34-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:20:13-163
+35            android:exported="true"
+35-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:21:13-36
+36            android:hardwareAccelerated="true"
+36-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:22:13-47
+37            android:launchMode="singleTop"
+37-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:23:13-43
+38            android:theme="@style/LaunchTheme"
+38-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:24:13-47
+39            android:windowSoftInputMode="adjustResize" >
+39-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:25:13-55
+40
+41            <!--
+42                 Specifies an Android theme to apply to this Activity as soon as
+43                 the Android process has started. This theme is visible to the user
+44                 while the Flutter UI initializes. After that, this theme continues
+45                 to determine the Window background behind the Flutter UI.
+46            -->
+47            <meta-data
+47-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:30:13-32:57
+48                android:name="io.flutter.embedding.android.NormalTheme"
+48-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:31:17-72
+49                android:resource="@style/NormalTheme" />
+49-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:32:17-54
+50
+51            <intent-filter>
+51-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:34:13-37:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:35:17-69
+52-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:35:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:36:17-77
+54-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:36:27-74
+55            </intent-filter>
+56            <intent-filter>
+56-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:34:13-37:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:35:17-69
+57-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:35:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:36:17-77
+59-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:36:27-74
+60            </intent-filter>
+61        </activity>
+62        <!--
+63             Don't delete the meta-data below.
+64             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+65        -->
+66        <meta-data
+66-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:45:9-47:33
+67            android:name="flutterEmbedding"
+67-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:46:13-44
+68            android:value="2" />
+68-->/Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:47:13-30
+69
+70        <activity
+70-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-20:47
+71            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+71-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-104
+72            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+72-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-137
+73            android:exported="true"
+73-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-36
+74            android:theme="@style/AppTheme" />
+74-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-44
+75        <activity
+75-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-24:55
+76            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+76-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-112
+77            android:exported="true"
+77-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-36
+78            android:theme="@style/ThemeTransparent" />
+78-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-52
+79        <activity
+79-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:25:9-28:55
+80            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+80-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-106
+81            android:exported="true"
+81-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-36
+82            android:theme="@style/ThemeTransparent" />
+82-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-52
+83        <activity
+83-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:29:9-33:55
+84            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+84-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-126
+85            android:exported="true"
+85-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-36
+86            android:launchMode="singleInstance"
+86-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-48
+87            android:theme="@style/ThemeTransparent" />
+87-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-52
+88        <activity
+88-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:34:9-38:55
+89            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+89-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-120
+90            android:exported="true"
+90-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-36
+91            android:launchMode="singleInstance"
+91-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-48
+92            android:theme="@style/ThemeTransparent" />
+92-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-52
+93
+94        <receiver
+94-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:40:9-43:40
+95            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+95-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:41:13-111
+96            android:enabled="true"
+96-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-35
+97            android:exported="false" />
+97-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-37
+98
+99        <meta-data
+99-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:45:9-47:36
+100            android:name="io.flutter.embedded_views_preview"
+100-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-61
+101            android:value="true" />
+101-->[:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-33
+102
+103        <provider
+103-->[:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+104            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+104-->[:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+105            android:authorities="com.atthirty.idoru.flutter.image_provider"
+105-->[:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+106            android:exported="false"
+106-->[:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+107            android:grantUriPermissions="true" >
+107-->[:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+108            <meta-data
+108-->[:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
+109                android:name="android.support.FILE_PROVIDER_PATHS"
+109-->[:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+110                android:resource="@xml/flutter_image_picker_file_paths" />
+110-->[:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
+111        </provider>
+112
+113        <activity
+113-->[:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+114            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+114-->[:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+115            android:exported="false"
+115-->[:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+116            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+116-->[:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+117
+118        <uses-library
+118-->[androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+119            android:name="androidx.window.extensions"
+119-->[androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+120            android:required="false" />
+120-->[androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+121        <uses-library
+121-->[androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+122            android:name="androidx.window.sidecar"
+122-->[androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+123            android:required="false" />
+123-->[androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+124
+125        <provider
+125-->[androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+126            android:name="androidx.startup.InitializationProvider"
+126-->[androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+127            android:authorities="com.atthirty.idoru.androidx-startup"
+127-->[androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+128            android:exported="false" >
+128-->[androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+129            <meta-data
+129-->[androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+130                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+130-->[androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+131                android:value="androidx.startup" />
+131-->[androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+132            <meta-data
+132-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+133                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+133-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+134                android:value="androidx.startup" />
+134-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+135        </provider>
+136    </application>
+137
+138</manifest>

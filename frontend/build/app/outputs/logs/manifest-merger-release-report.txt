@@ -1,0 +1,377 @@
+-- Merging decision tree log ---
+application
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:14:5-48:19
+MERGED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:15:5-48:19
+MERGED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:15:5-48:19
+MERGED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-14:19
+MERGED from [:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-14:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.8.0] /Users/kim-eunjong/.gradle/caches/transforms-3/6c8f9cc333087085ca1da745e4f46365/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] /Users/kim-eunjong/.gradle/caches/transforms-3/6c8f9cc333087085ca1da745e4f46365/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/0d2ca21a1a758c194798408b24fb24ea/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/0d2ca21a1a758c194798408b24fb24ea/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kim-eunjong/.gradle/caches/transforms-3/6c9979e7b4afd375b855fdd0a88c5e3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kim-eunjong/.gradle/caches/transforms-3/6c9979e7b4afd375b855fdd0a88c5e3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] /Users/kim-eunjong/.gradle/caches/transforms-3/6c8f9cc333087085ca1da745e4f46365/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:17:9-27
+	android:icon
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:16:9-43
+	android:name
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:15:9-42
+manifest
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:1-49:12
+MERGED from [:shared_preferences_android] /Users/kim-eunjong/Developments/github/idoru/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-50:12
+MERGED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-21:12
+MERGED from [:flutter_plugin_android_lifecycle] /Users/kim-eunjong/Developments/github/idoru/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:sqflite] /Users/kim-eunjong/Developments/github/idoru/build/sqflite/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-16:12
+MERGED from [:path_provider_android] /Users/kim-eunjong/Developments/github/idoru/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/a53bafbc36b1783f03224dd4ce2a2e6f/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/kim-eunjong/.gradle/caches/transforms-3/3af88b8f3eb63202b6556cec78167501/transformed/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/8e1ec00efd32e34b4aa4e635d0224099/transformed/webkit-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cae4262d4c33769b07b682e7fa000785/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/kim-eunjong/.gradle/caches/transforms-3/39fdd3ad540cfdbdc3a7fddaab8ef869/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/b349ee575bb226af4e2fa70ab6a0011d/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/kim-eunjong/.gradle/caches/transforms-3/082e0b0a5a1d9cfd8ea84139ffb51c2a/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /Users/kim-eunjong/.gradle/caches/transforms-3/ea4a69cf7c96c498681a11a4713572ee/transformed/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/kim-eunjong/.gradle/caches/transforms-3/8ed809fe1ecc702deaf2c9d7f9f0aacd/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/271a19c22eab51bd7c016b867ecd8717/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/7e8198132f6cab5b935aa07bd12427e4/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/a3f2ba6169ff3d2926e1595b44dbdcfb/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/503efd15fd6675601e10a22eafe2b89a/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e4582f4841c1fb29f7ef8fa6e65b6f7b/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/c9f1d1a5b427ae7cb5c2d3f901c3e72b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/9f134b23892f0f7ca23d3d396a884374/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] /Users/kim-eunjong/.gradle/caches/transforms-3/6c8f9cc333087085ca1da745e4f46365/transformed/core-1.8.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/kim-eunjong/.gradle/caches/transforms-3/bc660a1e9e4346746952026daa7a5ce5/transformed/exifinterface-1.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/0d2ca21a1a758c194798408b24fb24ea/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/33e1891115580ab5ea565c88e23d9b94/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kim-eunjong/.gradle/caches/transforms-3/6c9979e7b4afd375b855fdd0a88c5e3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/f709e2b3fd69c30f6b2c0d5ec7060f41/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/3face8f212dda2404edaad5dbdd1c587/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/kim-eunjong/.gradle/caches/transforms-3/9db556b527f8a8fde496ec70fa41e55e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/46a2e4e97e0b879ba8d6d852af5d5f65/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/kim-eunjong/.gradle/caches/transforms-3/05f61cabd81cdabc1c815bb71dc014ea/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/5d1e42add8254d885ca28b9981925ccf/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/kim-eunjong/.gradle/caches/transforms-3/ca3cad32611bab151d90754ed3809042/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/9dd185beb526584cb25f68673f90f8df/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/48a5424459209e57a448ef1aecb6521f/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e45db9137abed724ce5aa137074d6081/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:1-49:12
+	package
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:2:5-33
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:1-49:12
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:1-49:12
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:4:22-64
+queries
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:7:5-13:15
+MERGED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-13:15
+MERGED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-13:15
+package#com.atthirty.idoru
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:8:9-54
+	android:name
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:8:18-51
+intent#action:name:android.intent.action.VIEW+data:scheme:https
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:9:9-12:18
+action#android.intent.action.VIEW
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:10:13-65
+	android:name
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:10:21-62
+data
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:11:13-44
+	android:scheme
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:11:19-41
+uses-sdk
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+MERGED from [:shared_preferences_android] /Users/kim-eunjong/Developments/github/idoru/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] /Users/kim-eunjong/Developments/github/idoru/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_plugin_android_lifecycle] /Users/kim-eunjong/Developments/github/idoru/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_plugin_android_lifecycle] /Users/kim-eunjong/Developments/github/idoru/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/kim-eunjong/Developments/github/idoru/build/sqflite/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/kim-eunjong/Developments/github/idoru/build/sqflite/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/kim-eunjong/Developments/github/idoru/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/kim-eunjong/Developments/github/idoru/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/a53bafbc36b1783f03224dd4ce2a2e6f/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/a53bafbc36b1783f03224dd4ce2a2e6f/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/kim-eunjong/.gradle/caches/transforms-3/3af88b8f3eb63202b6556cec78167501/transformed/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/kim-eunjong/.gradle/caches/transforms-3/3af88b8f3eb63202b6556cec78167501/transformed/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/8e1ec00efd32e34b4aa4e635d0224099/transformed/webkit-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/8e1ec00efd32e34b4aa4e635d0224099/transformed/webkit-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cae4262d4c33769b07b682e7fa000785/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cae4262d4c33769b07b682e7fa000785/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/kim-eunjong/.gradle/caches/transforms-3/39fdd3ad540cfdbdc3a7fddaab8ef869/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/kim-eunjong/.gradle/caches/transforms-3/39fdd3ad540cfdbdc3a7fddaab8ef869/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/b349ee575bb226af4e2fa70ab6a0011d/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/b349ee575bb226af4e2fa70ab6a0011d/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/kim-eunjong/.gradle/caches/transforms-3/082e0b0a5a1d9cfd8ea84139ffb51c2a/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/kim-eunjong/.gradle/caches/transforms-3/082e0b0a5a1d9cfd8ea84139ffb51c2a/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/kim-eunjong/.gradle/caches/transforms-3/ea4a69cf7c96c498681a11a4713572ee/transformed/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/kim-eunjong/.gradle/caches/transforms-3/ea4a69cf7c96c498681a11a4713572ee/transformed/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/kim-eunjong/.gradle/caches/transforms-3/8ed809fe1ecc702deaf2c9d7f9f0aacd/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/kim-eunjong/.gradle/caches/transforms-3/8ed809fe1ecc702deaf2c9d7f9f0aacd/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/271a19c22eab51bd7c016b867ecd8717/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/271a19c22eab51bd7c016b867ecd8717/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/7e8198132f6cab5b935aa07bd12427e4/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/7e8198132f6cab5b935aa07bd12427e4/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/a3f2ba6169ff3d2926e1595b44dbdcfb/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/a3f2ba6169ff3d2926e1595b44dbdcfb/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/503efd15fd6675601e10a22eafe2b89a/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/503efd15fd6675601e10a22eafe2b89a/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e4582f4841c1fb29f7ef8fa6e65b6f7b/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e4582f4841c1fb29f7ef8fa6e65b6f7b/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/c9f1d1a5b427ae7cb5c2d3f901c3e72b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/c9f1d1a5b427ae7cb5c2d3f901c3e72b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/9f134b23892f0f7ca23d3d396a884374/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/9f134b23892f0f7ca23d3d396a884374/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] /Users/kim-eunjong/.gradle/caches/transforms-3/6c8f9cc333087085ca1da745e4f46365/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] /Users/kim-eunjong/.gradle/caches/transforms-3/6c8f9cc333087085ca1da745e4f46365/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/kim-eunjong/.gradle/caches/transforms-3/bc660a1e9e4346746952026daa7a5ce5/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/kim-eunjong/.gradle/caches/transforms-3/bc660a1e9e4346746952026daa7a5ce5/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/0d2ca21a1a758c194798408b24fb24ea/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/0d2ca21a1a758c194798408b24fb24ea/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/33e1891115580ab5ea565c88e23d9b94/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/33e1891115580ab5ea565c88e23d9b94/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kim-eunjong/.gradle/caches/transforms-3/6c9979e7b4afd375b855fdd0a88c5e3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kim-eunjong/.gradle/caches/transforms-3/6c9979e7b4afd375b855fdd0a88c5e3a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/f709e2b3fd69c30f6b2c0d5ec7060f41/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/f709e2b3fd69c30f6b2c0d5ec7060f41/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/3face8f212dda2404edaad5dbdd1c587/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/3face8f212dda2404edaad5dbdd1c587/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/kim-eunjong/.gradle/caches/transforms-3/9db556b527f8a8fde496ec70fa41e55e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/kim-eunjong/.gradle/caches/transforms-3/9db556b527f8a8fde496ec70fa41e55e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/46a2e4e97e0b879ba8d6d852af5d5f65/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/46a2e4e97e0b879ba8d6d852af5d5f65/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/kim-eunjong/.gradle/caches/transforms-3/05f61cabd81cdabc1c815bb71dc014ea/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/kim-eunjong/.gradle/caches/transforms-3/05f61cabd81cdabc1c815bb71dc014ea/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/5d1e42add8254d885ca28b9981925ccf/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/5d1e42add8254d885ca28b9981925ccf/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/kim-eunjong/.gradle/caches/transforms-3/ca3cad32611bab151d90754ed3809042/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/kim-eunjong/.gradle/caches/transforms-3/ca3cad32611bab151d90754ed3809042/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/9dd185beb526584cb25f68673f90f8df/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/9dd185beb526584cb25f68673f90f8df/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/48a5424459209e57a448ef1aecb6521f/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/48a5424459209e57a448ef1aecb6521f/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e45db9137abed724ce5aa137074d6081/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e45db9137abed724ce5aa137074d6081/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml
+activity#com.atthirty.idoru.MainActivity
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:18:9-42:20
+	android:launchMode
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:23:13-43
+	android:hardwareAccelerated
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:22:13-47
+	android:windowSoftInputMode
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:25:13-55
+	android:exported
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:21:13-36
+	android:configChanges
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:20:13-163
+	android:theme
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:24:13-47
+	android:name
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:19:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:30:13-32:57
+	android:resource
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:32:17-54
+	android:name
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:31:17-72
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:34:13-37:29
+action#android.intent.action.MAIN
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:36:27-74
+meta-data#flutterEmbedding
+ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:45:9-47:33
+	android:value
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:47:13-30
+	android:name
+		ADDED from /Users/kim-eunjong/Developments/github/idoru/android/app/src/main/AndroidManifest.xml:46:13-44
+intent#action:name:android.support.customtabs.action.CustomTabsService
+ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:18
+action#android.support.customtabs.action.CustomTabsService
+ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-90
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:11:21-87
+activity#com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity
+ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-20:47
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-36
+	android:configChanges
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-137
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-44
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-104
+activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity
+ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-24:55
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-36
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-52
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-112
+activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity
+ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:25:9-28:55
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-36
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-52
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-106
+activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance
+ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:29:9-33:55
+	android:launchMode
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-48
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-36
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-52
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-126
+activity#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance
+ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:34:9-38:55
+	android:launchMode
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-48
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-36
+	android:theme
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-52
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-120
+receiver#com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver
+ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:40:9-43:40
+	android:enabled
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-35
+	android:exported
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-37
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:41:13-111
+meta-data#io.flutter.embedded_views_preview
+ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:45:9-47:36
+	android:value
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-33
+	android:name
+		ADDED from [:flutter_inappwebview] /Users/kim-eunjong/Developments/github/idoru/build/flutter_inappwebview/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-61
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+	android:exported
+		ADDED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
+	android:resource
+		ADDED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
+	android:name
+		ADDED from [:image_picker_android] /Users/kim-eunjong/Developments/github/idoru/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+	android:exported
+		ADDED from [:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+	android:theme
+		ADDED from [:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+	android:name
+		ADDED from [:url_launcher_android] /Users/kim-eunjong/Developments/github/idoru/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/kim-eunjong/.gradle/caches/transforms-3/289dbc00909ce6513708fd612063726d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/0d2ca21a1a758c194798408b24fb24ea/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/0d2ca21a1a758c194798408b24fb24ea/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/kim-eunjong/.gradle/caches/transforms-3/e9becb39a88ec9d7e5c6ec3e66165ef1/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/kim-eunjong/.gradle/caches/transforms-3/cea1d508224896a08b5a6e63a288f71c/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78

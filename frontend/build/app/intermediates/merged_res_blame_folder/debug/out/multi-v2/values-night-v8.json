@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/kim-eunjong/Developments/github/idoru/frontend/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/Users/kim-eunjong/Developments/github/idoru/frontend/android/app/src/main/res/values-night/styles.xml",
+                    "from": {
+                        "startLines": "3,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "172,876",
+                        "endLines": "8,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "534,1040"
+                    },
+                    "to": {
+                        "startLines": "2,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,422",
+                        "endLines": "7,10",
+                        "endColumns": "12,12",
+                        "endOffsets": "417,586"
+                    }
+                },
+                {
+                    "source": "/Users/kim-eunjong/.gradle/caches/transforms-3/39fdd3ad540cfdbdc3a7fddaab8ef869/transformed/appcompat-1.4.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "591,661,745,829,925,1027,1129,1223",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "656,740,824,920,1022,1124,1218,1307"
+                    }
+                }
+            ]
+        }
+    ]
+}
